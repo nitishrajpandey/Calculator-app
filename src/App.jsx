@@ -12,7 +12,7 @@ function App() {
       setCalValue(newText);
     } else if (data === "=") {
       let result = eval(calValue);
-      result = result.toFixed(4);
+      result = result.toFixed(2);
       setCalValue(result);
     } else {
       let newData = calValue + data;
